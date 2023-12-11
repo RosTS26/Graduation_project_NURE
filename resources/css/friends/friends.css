@@ -1,0 +1,173 @@
+.form-control:focus {
+    box-shadow: none;
+    border-color: #dee2e6;
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Стили для полосы скролла в Chrome, Edge и Opera */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #C8C8C8;
+    border-radius: 5px;
+}
+
+/* === Стили для кнопок и поиска друзей === */
+
+.friends-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.btns-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btns-block input {
+    display: none;
+}
+
+.radio {
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 4px 8px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    background: #eee;
+    transition: background-color 0.3s ease;
+}
+
+.radio:hover {
+    background: #C8C8C8;
+}
+
+.btns-block input:checked + .radio {
+    background: #C8C8C8;
+}
+
+.btns-block label:last-child {
+    margin-right: 0;
+}
+
+.search-text {
+    width: auto;
+}
+
+.search-btn {
+    width: 70px;
+}
+
+.numIncom {
+    display: inline;
+}
+
+/* === Стили для листов друзей === */
+
+.friends-info {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.friends-list {
+    padding: 0;
+    margin: 0;
+    max-height: 482px;
+    overflow: auto;
+}
+
+.user-item {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.user-info {
+    font-size: 16px;
+}
+
+.user-info p {
+    margin-left: 6px;
+    margin-bottom: 20px;
+}
+
+.btn-user-info {
+    margin-right: 10px;
+    border: 0;
+    border-radius: 5px;
+    color: blue;
+    transition: background-color 0.3s ease;
+}
+
+.send-msg {
+    padding: 3px 6px;
+}
+
+.btn-user-info:hover {
+    color: #000;
+    background-color: #C8C8C8;
+}
+
+.avatar-block {
+    position: inherit;
+    margin-right: 20px;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.avatar {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.check-online {
+    width: 20px;
+    height: 20px;
+    left: 85%;
+    top: 85%;
+    background: #1BD561;
+    border: 3px solid #eee;
+}
+
+.not-friends {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Адаптация под телефон */
+@media screen and (max-width: 767px) {
+    .friends-panel {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .radio {
+        font-size: 14px;
+    }
+
+    .avatar-block {
+        margin: 0;
+    }
+
+    .user-info div {
+        font-size: 14px;
+    }
+
+    .delete-friend {
+        margin: 0px;
+    }
+}

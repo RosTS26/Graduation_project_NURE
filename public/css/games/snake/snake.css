@@ -1,0 +1,55 @@
+
+#game {
+    width: 550px;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.btn-start {
+    margin-top: 15px;
+}
+
+#btnStart {
+ width: 160px;
+}
+
+.gamepad {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.top-btn {
+    margin-bottom: 5px;
+}
+
+.bottom-btns button {
+    margin: 5px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+}
+
+@media screen and (max-width: 768px){
+    #game {
+        width: 350px;
+        height: 350px;
+    }
+
+    .gamepad {
+        display: flex;
+    }
+}
+
+/* @media screen and (max-width: 449px) {
+    #game {
+        width: 300px;
+        height: 300px;
+    }
+} */
+

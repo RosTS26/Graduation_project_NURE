@@ -1,0 +1,327 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial;
+}
+
+.game {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+}
+
+.tetris-box {
+	position: relative;
+}
+
+.main {
+	/* margin: 30px 180px; */
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	width: 400px;
+	min-width: 400px;
+	height: 520px;
+	border: 1px solid #000000;
+}
+
+.tetris {
+	width: 400px;
+	height: 720px;
+	display: flex;
+	overflow: hidden;
+	flex-wrap: wrap;
+	position: absolute;
+	bottom: 0;
+	background-color: #ffffff;
+}
+
+.excel {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #cccccc;
+}
+
+.figure, .set {
+	background-color: #1e488c;
+}
+
+/*Стили информационного меню справа*/
+
+.menu {
+	margin-left: 20px;
+	width: 150px;
+}
+
+.score {
+	width: 100%;
+	margin-top: 10px;
+	display: block;
+	font-size: 24px;
+	padding: 0 10px;
+	cursor: default;
+	outline: none;
+	border: 1px solid #000000;
+}
+
+.btn1 {
+	background: linear-gradient(#49708f, #293f50);
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	width: 100%;
+	padding: 12px 16px;
+	margin-top: 10px;
+	font-size: 24px;
+	border-radius: 5px;
+}
+
+/*Стили для выпадающего списка управления*/
+
+#info {
+	display: none;
+}
+
+label {
+	position: relative;
+	cursor: pointer;
+	display: block;
+	padding: 12px 16px;
+	font-size: 24px;
+	margin-top: 10px;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+	color: #ffffff;
+	background: linear-gradient(#49708f, #293f50);
+}
+
+.info_body {
+	position: absolute;
+	background: #F0F0F0;
+	text-align: center;
+	overflow: hidden;
+	border: 0px solid #293f50;
+	min-width: 150px;
+    height: 0;
+    transition: height 0.3s, border 0.1s 0.2s;
+}
+
+#info:checked ~ .info_body {
+	border: 1px solid #293f50;
+	height: 155.5px;
+	padding: 5px;
+	transition: height 0.3s;
+}
+
+.info_body p {
+	margin-bottom: 5px;
+}
+
+/*Картинка следующей фигуры*/
+
+#nextFig {
+	height: 170px;
+	display: block;
+	text-align: center;
+	border: solid 1px #000000;
+	padding: 10px 10px;
+}
+
+#nextFig p {
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*Сообщение на главном экране*/
+
+#msgInfo {
+	position: absolute;
+	background-color: #D0E4ED;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+	color: #000000;
+	text-align: center;
+	font-size: 48px;
+	padding: 12px 16px;
+	top: 200px;
+	left: 40px;
+}
+
+/* Стили для конопок управления */
+
+.gamepad {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.top-btn {
+    margin-bottom: 5px;
+}
+
+.bottom-btns button {
+    margin: 5px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+}
+
+/* Адаптивноть под мобилки */
+
+@media screen and (max-width: 768px){
+
+	.gamepad {
+		display: flex;
+	}
+
+	label,
+	.info_body {
+		display: none;
+	}
+
+	/* === */
+
+	.main {
+		width: 300px;
+		min-width: 300px;
+		height: 390px;
+	}
+
+	.tetris {
+		width: 300px;
+		height: 540px;
+	}
+
+	.excel {
+		width: 30px;
+		height: 30px;
+	}
+
+	#msgInfo {
+		font-size: 36px;
+		top: 150px;
+		left: 30px;
+	}
+}
+
+/* === */
+
+@media screen and (max-width: 480px) {
+
+	.gamepad {
+		margin-top: 60px;
+	}
+
+	.menu {
+		/* display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center; */
+		margin-left: 5px;
+	}
+
+	#nextFig {
+		height: 116px;
+		padding: 10px 10px;
+	}
+	
+	#nextFig p {
+		font-size: 13px;
+	}
+
+	#nextFig img {
+		width: 70px;
+	}
+
+	.score {
+		font-size: 14px;
+	}
+
+	/* === */
+
+	.main {
+		width: 250px;
+		min-width: 250px;
+		height: 325px;
+	}
+
+	.tetris {
+		width: 250px;
+		height: 450px;
+	}
+
+	.excel {
+		width: 25px;
+		height: 25px;
+	}
+
+	#msgInfo {
+		font-size: 24px;
+		padding: 5px 8px;
+		width: 210px;
+		top: 120px;
+		left: 20px;
+	}
+}
+
+/* === */
+
+@media screen and (max-width: 320px) {
+
+	#nextFig {
+		height: 95px;
+		padding: 5px 5px;
+	}
+
+	#nextFig img {
+		width: 60px;
+	}
+
+	#nextFig p {
+		font-size: 11px;
+	} 
+
+	.btn1 {
+		font-size: 14px;
+		padding: 5px 8px;
+	}
+
+	.score {
+		padding: 0;
+		font-size: 11px;
+	}
+
+	.main {
+		width: 200px;
+		min-width: 200px;
+		height: 260px;
+	}
+
+	.tetris {
+		width: 200px;
+		height: 360px;
+	}
+
+	.excel {
+		width: 20px;
+		height: 20px;
+	}
+
+	#msgInfo {
+		font-size: 16px;
+		padding: 5px 8px;
+		width: 160px;
+		top: 120px;
+		left: 20px;
+	}
+}
+
+

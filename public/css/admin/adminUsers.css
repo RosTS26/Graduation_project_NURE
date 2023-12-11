@@ -1,0 +1,223 @@
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none !important;
+    color: inherit !important;
+    background: none !important;
+    border: none !important;
+}
+
+p {
+    margin: 0;
+}
+
+label {
+    margin: 0;
+}
+
+/* Стили для полосы скролла в Chrome, Edge и Opera */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #C8C8C8;
+    border-radius: 5px;
+}
+
+/* === Стили для textarea === */
+
+textarea {
+	overflow: auto;
+	resize: none;
+	width: 65%;
+	height: 100px;
+	padding: 8px;
+	border: 0;
+    border-radius: 5px;
+	background-color: #454D55;
+    border: #19c37d solid 1px;
+    color: #FFF;
+}
+
+textarea:disabled,
+#days:disabled {
+    border: #9D422F solid 1px;
+}
+
+textarea:focus,
+input:focus {
+	outline: none;
+}
+
+/* Список юзеров */
+.users-info {
+    margin-top: 24px;
+    max-height: 630px;
+	overflow: auto;
+}
+
+.list-info {
+    font-size: 18px;
+}
+
+.users-list li {
+    width: 100%;
+}
+
+.user-item {
+	list-style: none;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	cursor: pointer;
+	background: #454D55;
+	text-align: center;
+	padding: 8px 16px;
+	font-size: 20px;
+    border-radius: 10px;
+}
+
+.user-item:hover{
+    background: #768391;
+}
+
+.check-newMsg {
+	left: 90%;
+	margin-top: -15px;
+}
+
+/*===  Content ===*/
+
+.content-info {
+    display: flex;
+    height: 550px;
+    font-size: 36px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* === User profile === */
+
+.card-block {
+    justify-content: space-around;
+}
+
+.card-body {
+    background: #343A40;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.avatar {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* === Блок функций админа === */
+
+.choice-radio {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.choice-radio input {
+	display: none;
+}
+
+.choice-radio label {
+	cursor: pointer;
+	padding: 10px;
+	font-size: 16px;
+	text-align: center;
+    background: #454D55;
+	border-radius: 5px;
+}
+
+.action-bar {
+    margin-top: 50px;
+}
+
+.element,
+.element-first {
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+	margin: 10px 10px;
+}
+
+.element-first {
+    align-items: start;
+}
+
+.element p,
+.element-first p {
+    width: 35%;
+}
+
+.element input {	
+	resize: none;
+	max-width: 33.3%;
+	padding: 5px 5px;
+	border: 0;
+    border-radius: 5px;
+	background-color: #454D55;
+    border: #19c37d solid 1px;
+    color: #FFF;
+}
+
+.changeBtn {
+	display: block;
+	margin: 0 auto;
+	background: #9D422F;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 20px;
+	width: 150px;
+	padding: 10px 0;
+	margin-top: 30px;
+}
+
+.changeBtn:hover {
+    background: #C26350;
+}
+
+.checkbox {
+	display: flex;
+	justify-content: center;
+    width: auto;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #454D55;
+    border: 1px solid #19c37d;
+    border-radius: 5px;
+    margin-right: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+
+input[type="checkbox"]:checked + label::before {
+    background-color: #19c37d;
+}
+
+.res {
+	text-align: center;
+    margin-top: 10px;
+    color: #E4AE0B;
+}
