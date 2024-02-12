@@ -18,7 +18,7 @@ function cancelOrDelete(status) {
     $('.msg-info').html(statusList[status]);
 
     if (status === 4 || status === 3) {
-        $('.button-block').html('<button class="btn btn-outline-primary me-2 add-friend" data-user-id="'+ user_id +'">Add as friend</button>');
+        $('.button-block').html('<button class="btn btn-outline-primary add-friend" data-user-id="'+ user_id +'">Add as friend</button>');
     } else {
         $('.button-block').html('');
     }
@@ -36,7 +36,7 @@ function addFriend(status) {
     $('.msg-info').html(statusList[status]);
 
     if (status === 0) {
-        $('.button-block').html('<button class="btn btn-outline-primary me-2 cancel-app" data-user-id="'+ user_id +'">Cancel the application</button>');
+        $('.button-block').html('<button class="btn btn-outline-primary cancel-app" data-user-id="'+ user_id +'">Cancel the application</button>');
     } 
     else if (status === 1) {
         let btn1 = $('<button class="btn btn-outline-primary me-2 send-msg" data-user-id="{{ $user->id }}">Send a message</button>');

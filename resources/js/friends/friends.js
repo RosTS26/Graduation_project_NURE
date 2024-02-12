@@ -4,6 +4,7 @@ import axios from 'axios';
 axios.defaults.headers.common['X-CSRF-TOKEN'] = csrf;
 
 let usersOnline;
+let numUsers = 0;
 
 // Вывод пользователей на экран
 function getUsersList(data) {
@@ -165,7 +166,7 @@ function numIncomApp() {
     if (num <= 0) $('.numIncom').css('display', 'none');
 }
 
-// =======================================================================
+// ==============================================================================
 
 $(function() {
     // Обработчки radio-button
@@ -208,6 +209,7 @@ $(function() {
         
         axios.post(url, { option: option })
             .then(function(response) {
+                numUsers = response.data.length;
                 getUsersList(response.data);
             })
             .catch(function (error) {
@@ -238,13 +240,16 @@ $(function() {
 
     // Обработчик отмены своей заявки (cancel-app)
     $('.friends-list').on('click', '.cancel-app', function() {
-        let url = '/friends/cancel-app';
         let user_id = $(this).data('user-id');
         let listItem = $(this).closest('li');
-
+        
+        let url = '/friends/cancel-app';
         axios.post(url, { user_id: user_id })
             .then(function(response) {
                 cancelOrDelete(response.data, user_id, listItem);
+                
+                numUsers--;
+                if (!numUsers) $('.friends-list').html('<p class="not-friends">You have no friend requests sent!</p>');
             })
             .catch(function (error) {
                 alert("Error cancel application...\n" + error);
@@ -261,6 +266,9 @@ $(function() {
             .then(function(response) {
                 cancelOrDelete(response.data, user_id, listItem);
                 numIncomApp();
+
+                numUsers--;
+                if (!numUsers) $('.friends-list').html('<p class="not-friends">No incoming friend requests!</p>');
             })
             .catch(function (error) {
                 alert("Error reject application...\n" + error);

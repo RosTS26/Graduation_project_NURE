@@ -1,6 +1,7 @@
 //let ajax = new XMLHttpRequest();
 // Подключение Axios
 import axios from 'axios';
+import { forEach } from 'lodash';
 
 let deposit;	// deposit игрока
 
@@ -246,11 +247,15 @@ async function game() {
 		});
 
 		// Флаг true для повторного прокрута если фигур больше 7
-		for (let figura of NumFigures.keys()) {
-			if (NumFigures.get(figura) >= minQuantityFig) {
-				spin = true; // Флаг true для повторного прокрута
-			}
-		}
+		NumFigures.forEach((quantity) => {
+			if (quantity >= minQuantityFig) spin = true; // Флаг true для повторного прокрута
+		});
+	
+		// for (let figura of NumFigures.keys()) {
+		// 	if (NumFigures.get(figura) >= minQuantityFig) {
+		// 		spin = true;
+		// 	}
+		// }
 
 		if (spin) {
 			// Подсвечиваем и удаляем фигуры которые "сыграли"
@@ -286,6 +291,7 @@ async function game() {
 			rendering = setInterval(() => renderingFigures(randFig), 15);
 			await new Promise(r => setTimeout(r, 1500));
 		}
+		
 	} while(spin);
 	
 	// POST запрос на сервер

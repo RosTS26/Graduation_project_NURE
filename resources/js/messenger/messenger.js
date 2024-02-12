@@ -61,7 +61,7 @@ function searchChats() {
         // Проходимся по каждому элементу <li>
         $('.user-item').each(function() {
             // Получаем текущее имя пользователя (в нижнем регистре)
-            let username = $(this).find('.name-id b').text().toLowerCase();
+            let username = $(this).find('.username').text().toLowerCase();
             
             // Проверяем, есть ли совпадения текста в имени 
             if (username.includes(searchText)) {
@@ -72,7 +72,7 @@ function searchChats() {
         });
     }
 
-    if (checkNotFound) $('.user-list').append('<p class="not-friends">User "'+ searchText +'" not found!</p>');
+    if (checkNotFound) $('.user-list').append('<p class="not-friends">User <span>'+ searchText +'</span> not found!</p>');
     
     return 0;
 }
@@ -191,7 +191,10 @@ $(function() {
 
             // Формируем окно с информацией о текущем пользователе
             let avatarBlock = $(this).find('.avatar-block').clone();
-            let userData = $(this).find('.user-data').clone().children().first().remove();
+            let userData = $('<div></div>')
+                .addClass('name-id')
+                .append($(this).find('.username').text())
+                .append(' (id: ' + $(this).attr('id') + ')');
 
             // Статус пользователя
             let onlineStatus = $('<div></div>').addClass('user-status').attr('id', userChatId);

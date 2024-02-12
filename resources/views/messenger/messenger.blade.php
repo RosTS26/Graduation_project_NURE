@@ -27,7 +27,7 @@
                                 <span style="display: none;" id="{{ $user['id'] }}" class="check-online position-absolute translate-middle badge rounded-pill"> </span>
                             </div>
                             <div class='user-data'>
-                                <p class="name-id"><b>{{ $user['name'] }}</b> (id: {{ $user['id'] }})</p>
+                                <p class="username">{{ $user['name'] }}</p>
                                 <p class="last-msg">{{ $user['lastMsg'] }}</p>
                             </div>
                             @if ($user['numNewMsgs'] > 0)

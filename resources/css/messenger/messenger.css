@@ -41,8 +41,14 @@ section {
     height: 100%;
 }
 
-.name-id {
+.username {
+    font-weight: bold;
     margin: 0;
+    min-width: 82px;
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .loading {
@@ -62,6 +68,7 @@ section {
     width: 90%;
     height: 100%;
     max-height: 80.8vh;
+    min-width: 250px;
     background-color: #C8C8C8;
 }
 
@@ -128,7 +135,7 @@ section {
 .avatar-block {
     position: relative;
     margin: 7px;
-    margin-right: 16px;
+    margin-right: 10px;
 }
 
 .avatar {
@@ -155,10 +162,18 @@ section {
 }
 
 .not-friends {
-    display: none;
+    /* display: none; */
     text-align: center;
     margin: 220px 16px 0 16px;
     font-size: 21px;
+}
+
+.not-friends span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: auto;
 }
 
 .toggle-button {
@@ -200,6 +215,18 @@ section {
     border-top-right-radius: 5px;
     border-bottom: 3px solid #EEE;
     font-size: 16px;
+}
+
+.user-info-panel .avatar-block {
+    margin: 7px 0;
+}
+
+.name-id {
+    padding-left: 10px;
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .user-status {
@@ -312,6 +339,13 @@ section {
 
 
 /* === Адаптация под телефон === */
+@media screen and (max-width: 990px) {
+    .chat-panel {
+        margin: 0;
+        max-width: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .chat-panel {
         height: 300px;
@@ -357,5 +391,23 @@ section {
         border-bottom-right-radius: 50px;
         background-color: #19C37D;
         /* position: absolute; */
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .chat-panel {
+        padding: 0;
+    }
+
+    .user-info-panel {
+        padding: 0 5px;
+    }
+
+    .name-id {
+        padding-left: 5px;
+    }
+
+    .user-info-panel button {
+        padding: 6px 2px;
     }
 }

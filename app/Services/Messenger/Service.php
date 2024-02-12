@@ -177,7 +177,7 @@ class Service
                     'chat' => json_encode($myChat),
                 ]);
 
-                $friendDB ->update([
+                $friendDB->update([
                     'new_msgs' => json_encode($friendNewMgs),
                 ]);
                 Db::commit();

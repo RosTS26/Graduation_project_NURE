@@ -12,9 +12,9 @@ window.Echo = new Echo({
 });
 
 // Настройка Axios для отправки заголовка X-Socket-ID
-window.Echo.connector.pusher.connection.bind('connected', function () {
-    axios.defaults.headers.common['X-Socket-ID'] = window.Echo.socketId();
-});
+// window.Echo.connector.pusher.connection.bind('connected', function () {
+//     axios.defaults.headers.common['X-Socket-ID'] = window.Echo.socketId();
+// });
 
 let timeoutIds = {};
 

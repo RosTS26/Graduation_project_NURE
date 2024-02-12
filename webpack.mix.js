@@ -36,6 +36,11 @@ mix.js('resources/js/games/tetris/tetrisScriptJQ.js', 'public/js/games/tetris')
 mix.js('resources/js/games/roulette/rouletteScript.js', 'public/js/games/roulette')
     .css('resources/css/games/roulette/rouletteCSS.css', 'public/css/games/roulette');
 
+mix.js('resources/js/games/seaBattle/connection.js', 'public/js/games/seaBattle')
+    .js('resources/js/games/seaBattle/timer-worker.js', 'public/js/games/seaBattle')
+    .js('resources/js/games/seaBattle/seaBattle.js', 'public/js/games/seaBattle')
+    .css('resources/css/games/seaBattle/seaBattleCSS.css', 'public/css/games/seaBattle')
+
 // Ресурсы профиля
 mix.js('resources/js/profile/profile.js', 'public/js/profile')
     .js('resources/js/profile/chat.js', 'public/js/profile')

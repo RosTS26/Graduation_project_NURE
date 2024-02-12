@@ -5,9 +5,9 @@
     <!-- Snake -->
     <div class="col text-center">
         <table class="table table-bordered table-striped caption-top">
-            <caption class="fs-5"><b>Top 10 snake players</b></caption>
+            <caption class="fs-5"><b>Top 10 Snake players</b></caption>
             <thead>
-                <tr>
+                <tr style="white-space: nowrap;">
                     <th scope="col">#</th>
                     <th scope="col">Name</th>
                     <th scope="col">Score</th>
@@ -29,9 +29,9 @@
     <!-- Tetris -->
     <div class="col text-center">
         <table class="table table-bordered table-striped caption-top">
-            <caption class="fs-5"><b>Top 10 tetris players</b></caption>
+            <caption class="fs-5"><b>Top 10 Tetris players</b></caption>
             <thead>
-                <tr>
+                <tr style="white-space: nowrap;">
                     <th scope="col">#</th>
                     <th scope="col">Name</th>
                     <th scope="col">Score</th>
@@ -50,25 +50,25 @@
             </tbody>
         </table>
     </div>
-    <!-- Roulette -->
+    <!-- SeaBattle -->
     <div class="col text-center">
         <table class="table table-bordered table-striped caption-top">
-            <caption class="fs-5"><b>Top 10 roulette players</b></caption>
+            <caption class="fs-5"><b>Top 10 Sea battle players</b></caption>
             <thead>
-                <tr>
+                <tr style="white-space: nowrap;">
                     <th scope="col">#</th>
                     <th scope="col">Name</th>
-                    <th scope="col">Deposit</th>
-                    <th scope="col">Games played</th>
+                    <th scope="col">Rating</th>
+                    <th scope="col">Victories</th>
                 </tr>
             </thead>
             <tbody class="table-group-divider">
-                @foreach($topRoulette as $item)
+                @foreach($topSeaBattle as $item)
                     <tr>
                         <th scope="row">{{ $loop->iteration }}</th>
                         <td>{{ $item['name'] }}</td>
-                        <td>{{ $item['deposit'] }}</td>
-                        <td>{{ $item['num_of_games'] }}</td>
+                        <td>{{ $item['score'] }}</td>
+                        <td>{{ $item['num_of_wins'] }}</td>
                     </tr>
                 @endforeach
             </tbody>

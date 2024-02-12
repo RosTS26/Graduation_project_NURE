@@ -310,6 +310,7 @@ document.addEventListener('keydown', function(e) {
 
 let msgInfo = document.getElementById('msgInfo');
 let btnStart = document.querySelector("#btnStart");
+
 btnStart.addEventListener("click", function() {
 	document.getElementById("btnStart").disabled = true;
 	msgInfo.style.display = "none";

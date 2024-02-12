@@ -10,7 +10,7 @@ use App\Http\Controllers\Profile\AdminChatController;
 use App\Http\Controllers\Admin\Chat\UsersChatController;
 
 //test 
-//Route::post('/test', [AdminChatController::class, 'loadChat'])->name('test');
+//Route::post('/test', [ConnectController::class, '__invoke'])->name('test');
 
 Auth::routes(); // Роуты регистрации
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -126,30 +126,51 @@ Route::group(['middleware' => ['auth.check', 'ban.check'],
     // Группировка игр
     Route::group(['namespace' => 'Games',
         'prefix' => 'game'], function() {
-        // Группировка роутов змейки
+        // Змейка
         Route::group(['namespace' => 'Snake',
             'prefix' => 'snake'], function() {
             Route::get('/', 'IndexController')->name('game.snake.index');
             Route::post('/game-over', 'GameOverController')->name('game.snake.gameover');
-            Route::get('/game-over', 'GameOverController')->middleware('redirectGetRequests');
+            Route::get('/game-over')->middleware('redirectGetRequests');
         });
 
-        // Группировка роутов тетриса
+        // Тетрис
         Route::group(['namespace' => 'Tetris',
             'prefix' => 'tetris'], function() {
             Route::get('/', 'IndexController')->name('game.tetris.index');
             Route::post('/game-over', 'GameOverController')->name('game.tetris.gameover');
-            Route::get('/game-over', 'GameOverController')->middleware('redirectGetRequests');
+            Route::get('/game-over')->middleware('redirectGetRequests');
         });
         
-        // Группировка роутов рулетки
+        // Рулетка
         Route::group(['namespace' => 'Roulette',
             'prefix' => 'roulette'], function() {
             Route::get('/', 'IndexController')->name('game.roulette.index');
             Route::post('/game-over', 'GameOverController')->name('game.roulette.gameover');
             Route::post('/get-deposit', 'GetDepositController')->name('game.roulette.getdeposit');
-            Route::get('/game-over', 'GameOverController')->middleware('redirectGetRequests');
-            Route::get('/get-deposit', 'GetDepositController')->middleware('redirectGetRequests');
+            Route::get('/game-over')->middleware('redirectGetRequests');
+            Route::get('/get-deposit')->middleware('redirectGetRequests');
         });
+
+        // Морской бой
+        Route::group(['namespace' => 'SeaBattle',
+            'prefix' => 'sea-battle'], function() {
+                Route::get('/', 'IndexController')->name('game.seabattle.index');
+                Route::post('/connect', 'ConnectController')->name('game.seabattle.connect');
+                Route::post('/confirm', 'ConfirmController')->name('game.seabattle.confirm');
+                Route::post('/start-game', 'StartGameController')->name('game.seabattle.start');
+                Route::post('/set-session', 'SetSessionController')->name('game.seabattle.set-session');
+                Route::post('/ready-game', 'ReadyGameController')->name('game.seabattle.ready');
+                Route::post('/shot', 'ShotController')->name('game.seabattle.shot');
+                Route::post('/game-over', 'GameOverController')->name('game.seabattle.game-over');
+
+                Route::get('/connect')->middleware('redirectGetRequests');
+                Route::get('/confirm')->middleware('redirectGetRequests');
+                Route::get('/start-game')->middleware('redirectGetRequests');
+                Route::get('/set-session')->middleware('redirectGetRequests');
+                Route::get('/ready-game')->middleware('redirectGetRequests');
+                Route::get('/shot')->middleware('redirectGetRequests');
+                Route::get('/game-over')->middleware('redirectGetRequests');
+            });
     });
 });

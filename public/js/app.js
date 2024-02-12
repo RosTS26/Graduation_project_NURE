@@ -995,6 +995,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./resources/css/games/seaBattle/seaBattleCSS.css":
+/*!********************************************************!*\
+  !*** ./resources/css/games/seaBattle/seaBattleCSS.css ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL2dhbWVzL3NlYUJhdHRsZS9zZWFCYXR0bGVDU1MuY3NzIiwibWFwcGluZ3MiOiI7QUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9jc3MvZ2FtZXMvc2VhQmF0dGxlL3NlYUJhdHRsZUNTUy5jc3M/MGY1ZCJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/css/games/seaBattle/seaBattleCSS.css\n");
+
+/***/ }),
+
 /***/ "./resources/css/profile/profile.css":
 /*!*******************************************!*\
   !*** ./resources/css/profile/profile.css ***!
@@ -1002,7 +1013,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL3Byb2ZpbGUvcHJvZmlsZS5jc3MiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL2Nzcy9wcm9maWxlL3Byb2ZpbGUuY3NzP2VkOTgiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/css/profile/profile.css\n");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL3Byb2ZpbGUvcHJvZmlsZS5jc3MiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL2Nzcy9wcm9maWxlL3Byb2ZpbGUuY3NzPzYxZWQiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/css/profile/profile.css\n");
 
 /***/ }),
 
@@ -1013,7 +1024,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL2ZyaWVuZHMvZnJpZW5kcy5jc3MiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL2Nzcy9mcmllbmRzL2ZyaWVuZHMuY3NzP2IyNGEiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/css/friends/friends.css\n");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL2ZyaWVuZHMvZnJpZW5kcy5jc3MiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL2Nzcy9mcmllbmRzL2ZyaWVuZHMuY3NzP2VkODgiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/css/friends/friends.css\n");
 
 /***/ }),
 
@@ -1024,7 +1035,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL21lc3Nlbmdlci9tZXNzZW5nZXIuY3NzIiwibWFwcGluZ3MiOiI7QUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9jc3MvbWVzc2VuZ2VyL21lc3Nlbmdlci5jc3M/ZDM0NyJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/css/messenger/messenger.css\n");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL21lc3Nlbmdlci9tZXNzZW5nZXIuY3NzIiwibWFwcGluZ3MiOiI7QUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9jc3MvbWVzc2VuZ2VyL21lc3Nlbmdlci5jc3M/YjFlOCJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/css/messenger/messenger.css\n");
 
 /***/ }),
 
@@ -1235,6 +1246,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			"css/messenger/messenger": 0,
 /******/ 			"css/friends/friends": 0,
 /******/ 			"css/profile/profile": 0,
+/******/ 			"css/games/seaBattle/seaBattleCSS": 0,
 /******/ 			"css/games/roulette/rouletteCSS": 0
 /******/ 		};
 /******/ 		
@@ -1285,16 +1297,17 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/sass/app.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/admin/adminChats.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/admin/adminUsers.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/games/snake/snake.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/games/tetris/tetrisCSS.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/games/roulette/rouletteCSS.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/profile/profile.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/friends/friends.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/messenger/messenger.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/seaBattle/seaBattleCSS","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/seaBattle/seaBattleCSS","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/seaBattle/seaBattleCSS","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/admin/adminChats.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/seaBattle/seaBattleCSS","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/admin/adminUsers.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/seaBattle/seaBattleCSS","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/games/snake/snake.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/seaBattle/seaBattleCSS","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/games/tetris/tetrisCSS.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/seaBattle/seaBattleCSS","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/games/roulette/rouletteCSS.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/seaBattle/seaBattleCSS","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/games/seaBattle/seaBattleCSS.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/seaBattle/seaBattleCSS","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/profile/profile.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/seaBattle/seaBattleCSS","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/friends/friends.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app","css/games/tetris/tetrisCSS","css/games/snake/snake","css/admin/adminUsers","css/admin/adminChats","css/messenger/messenger","css/friends/friends","css/profile/profile","css/games/seaBattle/seaBattleCSS","css/games/roulette/rouletteCSS"], () => (__webpack_require__("./resources/css/messenger/messenger.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

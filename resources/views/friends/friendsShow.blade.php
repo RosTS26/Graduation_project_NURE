@@ -17,12 +17,12 @@
                         <h4 class="my-3">{{ $user->name }}</h4>
                         <div class="button-block d-flex justify-content-center mb-2">
                             @if ($status == 0)
-                            <button class="btn btn-outline-primary me-2 add-friend" data-user-id="{{ $user->id }}">Add as friend</button>
+                            <button class="btn btn-outline-primary add-friend" data-user-id="{{ $user->id }}">Add as friend</button>
                             @elseif ($status == 1)
-                            <a href="/messenger?id={{ $user->id }}" class="btn btn-outline-primary me-2 send-msg" data-user-id="{{ $user->id }}">Send a message</a>
+                            <a href="/messenger?id={{ $user->id }}" class="btn btn-outline-primary send-msg" data-user-id="{{ $user->id }}">Send a message</a>
                             <button class="btn btn-outline-warning delete-friend" data-user-id="{{ $user->id }}">Delete friend</button>
                             @elseif ($status == 2)
-                            <button class="btn btn-outline-primary me-2 cancel-app" data-user-id="{{ $user->id }}">Cancel the application</button>
+                            <button class="btn btn-outline-primary cancel-app" data-user-id="{{ $user->id }}">Cancel the application</button>
                             @elseif ($status == 3)
                             <button class="btn btn-outline-success me-2 add-friend" data-user-id="{{ $user->id }}">Accept</button>
                             <button class="btn btn-outline-warning reject-app" data-user-id="{{ $user->id }}">Reject</button>
@@ -43,19 +43,19 @@
                             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                                 <div class="accordion-body">
                                     <div class="row ms-1">
-                                            <div class="col-sm-5">
-                                                <p class="mb-0">Top score:</p>
+                                            <div class="col">
+                                                <p class="mb-0 top-score">Top score:</p>
                                             </div>
-                                            <div class="col-sm-7">
+                                            <div class="col">
                                                 <p class="text-muted mb-0"><b>{{ $user->snake->top_score }}</b></p>
                                             </div>
                                         </div>
                                         <hr>
                                         <div class="row ms-1">
-                                            <div class="col-sm-7">
-                                                <p class="mb-0">Num of games:</p>
+                                            <div class="col">
+                                                <p class="mb-0 num-of-games">Num of games:</p>
                                             </div>
-                                            <div class="col-sm-5">
+                                            <div class="col">
                                                 <p class="text-muted mb-0"><b>{{ $user->snake->num_of_games }}</b></p>
                                             </div>
                                         </div>
@@ -71,19 +71,19 @@
                                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                                     <div class="accordion-body">
                                         <div class="row ms-1">
-                                            <div class="col-sm-5">
-                                                <p class="mb-0">Top score:</p>
+                                            <div class="col">
+                                                <p class="mb-0 top-score">Top score:</p>
                                             </div>
-                                            <div class="col-sm-7">
+                                            <div class="col">
                                                 <p class="text-muted mb-0"><b>{{ $user->tetris->top_score }}</b></p>
                                             </div>
                                         </div>
                                         <hr>
                                         <div class="row ms-1">
-                                            <div class="col-sm-7">
-                                                <p class="mb-0">Num of games:</p>
+                                            <div class="col">
+                                                <p class="mb-0 num-of-games">Num of games:</p>
                                             </div>
-                                            <div class="col-sm-5">
+                                            <div class="col">
                                                 <p class="text-muted mb-0"><b>{{ $user->tetris->num_of_games }}</b></p>
                                             </div>
                                         </div>
@@ -93,26 +93,35 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                        <div class="fs-5">Roulette progress</div>
+                                        <div class="fs-5">Sea battle progress</div>
                                     </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                                     <div class="accordion-body">
                                         <div class="row ms-1">
-                                            <div class="col-sm-5">
-                                                <p class="mb-0">Deposit:</p>
+                                            <div class="col">
+                                                <p class="mb-0">Rating:</p>
                                             </div>
-                                            <div class="col-sm-7">
-                                                <p class="text-muted mb-0"><b>{{ $user->roulette->deposit }}</b></p>
+                                            <div class="col">
+                                                <p class="text-muted mb-0"><b>{{ $user->seaBattle->score }}</b></p>
                                             </div>
                                         </div>
                                         <hr>
                                         <div class="row ms-1">
-                                            <div class="col-sm-7">
-                                                <p class="mb-0">Num of games:</p>
+                                            <div class="col">
+                                                <p class="mb-0">Victories:</p>
                                             </div>
-                                            <div class="col-sm-5">
-                                                <p class="text-muted mb-0"><b>{{ $user->roulette->num_of_games }}</b></p>
+                                            <div class="col">
+                                                <p class="text-muted mb-0"><b>{{ $user->seaBattle->num_of_wins }}</b></p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row ms-1">
+                                            <div class="col">
+                                                <p class="mb-0 num-of-games">Num of games:</p>
+                                            </div>
+                                            <div class="col">
+                                                <p class="text-muted mb-0"><b>{{ $user->seaBattle->num_of_games }}</b></p>
                                             </div>
                                         </div>
                                     </div>

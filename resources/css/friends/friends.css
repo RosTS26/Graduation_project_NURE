@@ -149,6 +149,12 @@ li, a {
 }
 
 /* Адаптация под телефон */
+@media screen and (max-width: 970px) {
+    .friends-panel {
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .friends-panel {
         width: 100%;
@@ -157,6 +163,7 @@ li, a {
 
     .radio {
         font-size: 14px;
+        margin: 0;
     }
 
     .avatar-block {
@@ -169,5 +176,19 @@ li, a {
 
     .delete-friend {
         margin: 0px;
+    }
+}
+
+@media screen and (max-width: 367px) {
+    .radio {
+        font-size: 12px;
+    }
+
+    .user-item {
+        text-align: center;
+    }
+
+    .user-info p {
+        margin: 0;
     }
 }

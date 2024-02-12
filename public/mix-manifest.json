@@ -8,6 +8,9 @@
     "/js/games/tetris/tetrisScriptJQ.js": "/js/games/tetris/tetrisScriptJQ.js",
     "/js/games/tetris/tetrisScript.js": "/js/games/tetris/tetrisScript.js",
     "/js/games/roulette/rouletteScript.js": "/js/games/roulette/rouletteScript.js",
+    "/js/games/seaBattle/connection.js": "/js/games/seaBattle/connection.js",
+    "/js/games/seaBattle/timer-worker.js": "/js/games/seaBattle/timer-worker.js",
+    "/js/games/seaBattle/seaBattle.js": "/js/games/seaBattle/seaBattle.js",
     "/js/profile/profile.js": "/js/profile/profile.js",
     "/js/profile/chat.js": "/js/profile/chat.js",
     "/js/friends/friends.js": "/js/friends/friends.js",
@@ -22,6 +25,7 @@
     "/css/messenger/messenger.css": "/css/messenger/messenger.css",
     "/css/friends/friends.css": "/css/friends/friends.css",
     "/css/profile/profile.css": "/css/profile/profile.css",
+    "/css/games/seaBattle/seaBattleCSS.css": "/css/games/seaBattle/seaBattleCSS.css",
     "/css/games/roulette/rouletteCSS.css": "/css/games/roulette/rouletteCSS.css",
     "/images/admin/icon/send-button.png": "/images/admin/icon/send-button.png",
     "/images/avatars/avatar_2.png": "/images/avatars/avatar_2.png",
@@ -39,6 +43,8 @@
     "/images/games/roulette/ground2.png": "/images/games/roulette/ground2.png",
     "/images/games/roulette/roulette.jpg": "/images/games/roulette/roulette.jpg",
     "/images/games/roulette/фигуры.png": "/images/games/roulette/фигуры.png",
+    "/images/games/seaBattle/loading.gif": "/images/games/seaBattle/loading.gif",
+    "/images/games/seaBattle/sea-battle.png": "/images/games/seaBattle/sea-battle.png",
     "/images/games/snake/food.png": "/images/games/snake/food.png",
     "/images/games/snake/ground.png": "/images/games/snake/ground.png",
     "/images/games/snake/snake.jpg": "/images/games/snake/snake.jpg",
@@ -55,5 +61,6 @@
     "/images/loading.gif": "/images/loading.gif",
     "/images/profile/icon/chat.png": "/images/profile/icon/chat.png",
     "/images/profile/icon/pushMsg.png": "/images/profile/icon/pushMsg.png",
-    "/images/user.png": "/images/user.png"
+    "/images/user.png": "/images/user.png",
+    "/images/avatars/avatar_2.jpg": "/images/avatars/avatar_2.jpg"
 }
