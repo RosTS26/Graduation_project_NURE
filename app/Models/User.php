@@ -41,21 +41,13 @@ class User extends Authenticatable implements JWTSubject
 
         static::created(function ($user) {
             // Создание связанных объектов в таблицах для игр
-            $user->snake()->create([
-                'user_id' => $user->id,
-            ]);
-
-            $user->tetris()->create([
-                'user_id' => $user->id,
-            ]);
-
-            $user->roulette()->create([
-                'user_id' => $user->id,
-            ]);
-
+            $user->snake()->create();
+            $user->tetris()->create();
+            $user->roulette()->create();
+            $user->seabattle()->create();
+            
             // Создание таблицы друзей
             $user->friend()->create([
-                'user_id' => $user->id,
                 'friends' => json_encode([]),
                 'sent_app' => json_encode([]),
                 'incoming_app' => json_encode([]),
@@ -74,6 +66,10 @@ class User extends Authenticatable implements JWTSubject
 
     public function Roulette() {
         return $this->hasOne(Roulette::class, 'user_id', 'id');
+    }
+    
+    public function SeaBattle() {
+        return $this->hasOne(SeaBattle::class, 'user_id', 'id');
     }
 
     public function Friend() {
