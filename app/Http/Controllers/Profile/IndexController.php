@@ -26,7 +26,9 @@ class IndexController extends BaseController
         $gamesInfo = [
             'snake' => $info->snake,
             'tetris' => $info->tetris,
-            'roulette' => $info->roulette];
+            'roulette' => $info->roulette,
+            'seaBattle' => $info->seaBattle
+        ];
         
         // Кол-во новых сообщений от админ-чата
         $adminChat = AdminChat::where('user_id', '=', auth()->user()->id)->first();
